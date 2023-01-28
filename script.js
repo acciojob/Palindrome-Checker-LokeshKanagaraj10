@@ -5,18 +5,16 @@ function palindrome(str){
 	const arr = str.split("")
 	let i = 0;
 	let j = n-1;
-	if(i<j)
-	{
-	if(arr[i] == arr[j])
-		{
+	while(i<j){
+		if(arr[i]==arr[j]){
+			if(i>=j){
+				return true;
+			}
 			i++;
 			j--;
-			if(i===j){
-				return true
-			}
 		}
 		else{
-			return false
+			return false;
 		}
 	}
 
