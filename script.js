@@ -2,7 +2,7 @@
 
 function palindrome(str){
 	const n = str.length
-	const arr = strtoLowerCase().split("")
+	const arr = str.toLowerCase().split("")
 	let i = 0;
 	let j = n-1;
 	while(i<j){
